@@ -41,9 +41,9 @@ ExpressJS
 
 
 # Contributors
-# Beerappa Metre
-# Alok Sulya
-# Ashutosh Ahirwar
+Beerappa Metre
+Alok Sulya
+Ashutosh Ahirwar
 
 
 # Getting Started
