@@ -16,28 +16,28 @@ The system will have a secure login mechanism to ensure that only authorized use
 
 
 # Product Features :
-### Secure Login
-### Student module
-### Admin module
-### Reports and analytics
-Search and filter
-Notifications
-User-friendly interface
-Data export
+Secure Login,
+Student module,
+Admin module,
+Reports and analytics,
+Search and filter,
+Notifications,
+User-friendly interface,
+Data export.
 
 
 # User Class: 
-Students
-Administrators
+Students,
+Administrators. 
 Each user class will have different levels of access and permissions within the system.
 
 
 # Technologies Used : 
-MongoDB
-HTML
-CSS
-JavaScript
-ExpressJS
+MongoDB ,
+HTML ,
+CSS ,
+JavaScript ,
+ExpressJS .
 
 
 # Contributors
