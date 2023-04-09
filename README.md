@@ -10,16 +10,16 @@ Academic Gateway is a web-based financial management system for the Indian Insti
 The goal of this project is to create an intuitive and user-friendly interface that enables students to easily view their financial transactions and dues, while also streamlining the process for the finance department to manage and maintain financial data in a more efficient and organized manner.
 
 
-#Overall Description : 
+# Overall Description : 
 The system will have a secure login mechanism to ensure that only authorized users can access the system. Users will be classified into different classes such as students, finance department staff, and admin, with different levels of access and permissions. The student module will allow students to view their financial transactions and dues. The admin module will be used for system maintenance and management, while the finance department module will allow finance department staff to manage and maintain financial data.
 
 
 
 # Product Features :
-Secure Login
-Student module
-Admin module
-Reports and analytics
+### Secure Login
+### Student module
+### Admin module
+## Reports and analytics
 Search and filter
 Notifications
 User-friendly interface
