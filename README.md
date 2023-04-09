@@ -19,7 +19,7 @@ The system will have a secure login mechanism to ensure that only authorized use
 ### Secure Login
 ### Student module
 ### Admin module
-## Reports and analytics
+### Reports and analytics
 Search and filter
 Notifications
 User-friendly interface
