@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/login.css" />
+
+  </head>
+  <body>
+
+    <header>
+      <img src="https://www.iiitg.ac.in/header.svg" alt="img not found" />
+    </header>
+
+    <div class="wrapper">
+      <h1>Admin Login</h1>
+      <br />
+      <p>Please login in <br />to continue</p>
+
+      <form action="/adminlogin" method="post">
+        <input placeholder="User name" name="username" type="text" />
+        <br />
+        <input placeholder="Password" name="password" type="password" />
+        <br />
+        {{! <input class="sub" type="submit" /> }}
+
+        {{! <h3>Dont have a account ?</h3> }}
+        {{! <a href="/signup">Create a new account</a> }}
+        <button type="submit">Sign in</button>
+      </form>
+
+      <p class="or">
+        ----- or continue with -----
+      </p>
+      <div class="icons">
+        <i class="fab fa-google"></i>
+      </div>
+      <br />
+      <div>
+        <p class="admin-login">
+          <a href="/login">Studentlogin Login</a>
+        </p>
+      </div>
+      <div class="not-member">
+        <a href="/signup">Don't have an account? Contact Adminstration</a>
+        {{! Don't have an account? Contact Adminstration }}
+      </div>
+    </div>
+
+  </body>
+</html>

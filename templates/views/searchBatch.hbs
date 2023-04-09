@@ -1,0 +1,110 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/searchBatch.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Oswald"
+    />
+
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="https://www.iiitg.ac.in/header.svg" alt="img not found" />
+        <!-- <h2>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY</h2> -->
+        <nav class="nav">
+          <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="grid-container">
+        <!-- 
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div> -->
+        <div id="myleftSidenav" class="leftsidenav" class="grid-item">
+          <a href="/adminHome" class="icon-a"><i
+              class="fa fa-dashboard icons"
+            ></i>
+            &nbsp;&nbsp;Search</a>
+
+          <a href="/verify" class="icon-b"><i class="fa fa-users icons"></i>
+            &nbsp;&nbsp;Verify Reciept</a>
+          <a href="/addRemove" class="icon-c"><i class="fa fa-list icons"></i>
+            &nbsp;&nbsp;Add/Remove</a>
+          <a href="/updateEntry" class="icon-d"><i
+              class="fa fa-shopping-bag icons"
+            ></i>
+            &nbsp;&nbsp;Update</a>
+          <a href="/analytics" class="icon-e"><i class="fa fa-tasks icons"></i>
+            &nbsp;&nbsp;Analytics</a>
+
+        </div>
+
+        <div class="grid-item" id="middle-text" class="flex-container">
+          <div class="search-menu">
+            <ul>
+              <li><a class="s1" href="/adminHome">Search Student</a></li>
+              <li><a href="/searchBatch" class="s2">Search Batch</a></li>
+            </ul>
+          </div>
+          <div class="content-area">
+            <div class="search-bar">
+              <form id="form" role="search" action="/searchBatch" method="post">
+                <input
+                  type="search"
+                  id="query"
+                  name="batch"
+                  placeholder=" Search..."
+                  aria-label="Search through site content"
+                />
+                <button>Search</button>
+              </form>
+            </div>
+            <div class="display-details">
+              <div class="detail-header">
+                <div class="name">Name</div>
+                <div class="roll-number">Roll Number</div>
+                <div class="batch">Batch</div>
+                <div class="branch">Branch</div>
+                <div class="programme">Programme</div>
+              </div>
+              {{!-- {{#if students}} --}}
+
+                {{#each students}}
+                  <div class="display1">
+                    <div class="name1">{{this.name}}</div>
+                    <div class="roll-number1">{{this.rollno}}</div>
+                    <div class="batch1">{{this.batch}}</div>
+                    <div class="branch1">{{this.branch}}</div>
+                    <div class="programme1">{{this.programme}}</div>
+                  </div>
+                {{/each}}
+              {{!-- {{/if}} --}}
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="grid-container1">
+        <p id="foot-left" class="grid-item1">@IIIT Guwahati 2023 </p>
+        <p id="foot-right" class="grid-item1">
+          IIIT Guwahati,Bongora, Guwahati -781015</p>
+      </footer>
+    </div>
+  </body>
+
+</html>

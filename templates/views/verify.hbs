@@ -1,0 +1,213 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Oswald"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="/css/verify.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="https://www.iiitg.ac.in/header.svg" alt="img not found" />
+        <!-- <h2>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY</h2> -->
+        <nav>
+          <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="grid-container">
+        <!-- 
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div> -->
+        <div id="myleftSidenav" class="leftsidenav" class="grid-item">
+          <a href="/adminhome" class="icon-a"><i
+              class="fa fa-dashboard icons"
+            ></i>
+            &nbsp;&nbsp;Search</a>
+
+          <a href="/verify" class="icon-b"><i class="fa fa-users icons"></i>
+            &nbsp;&nbsp;Verify Reciept</a>
+          <a href="/addRemove" class="icon-c"><i class="fa fa-list icons"></i>
+            &nbsp;&nbsp;Add/Remove</a>
+          <a href="/updateEntry" class="icon-d"><i
+              class="fa fa-shopping-bag icons"
+            ></i>
+            &nbsp;&nbsp;Update</a>
+          <a href="/analytics" class="icon-e"><i class="fa fa-tasks icons"></i>
+            &nbsp;&nbsp;Analytics</a>
+
+        </div>
+
+        <div class="grid-item" id="middle-text" class="flex-container">
+          <div class="add-stu">
+            <form action="/tacos">
+              <div>
+                <span class="lab-a">
+                  Name
+                </span>
+                <span class="inp-a">
+                  : Ashutosh Ahirwar
+                </span>
+              </div>
+              <div>
+                <span class="lab-b">
+                  Roll Number
+                </span>
+                <span class="inp-b">
+                  : 2001039
+                </span>
+              </div>
+              <div>
+                <span class="lab-c">
+                  Batch
+                </span>
+                <span class="inp-c">
+                  : 2020
+                </span>
+              </div>
+
+              <div>
+                <span class="lab-e">
+                  Programme
+                </span>
+                <span class="inp-e">
+                  : Btech
+                </span>
+              </div>
+              <div>
+                <span class="lab-f">
+                  Email
+                </span>
+                <span class="inp-f">
+                  : abc@gmail.com
+                </span>
+              </div>
+              <div>
+                <span class="lab-g">
+                  Phone
+                </span>
+                <span class="inp-g">
+                  : 34342xxxxx
+                </span>
+              </div>
+              <div>
+                <span class="lab-h">
+                  Tution Fee Paid
+                </span>
+                <span class="inp-h">
+                  : Rs 112500
+                </span>
+              </div>
+              <div>
+                <span class="lab-i">
+                  Hostel Fee paid
+                </span>
+                <span class="inp-i">
+                  : Rs 12500
+                </span>
+              </div>
+              <div>
+                <span class="lab-j">
+                  Mess Fee Paid
+                </span>
+                <span class="inp-j">
+                  : Rs 20000
+                </span>
+              </div>
+              <div>
+                <span class="lab-k">
+                  library Dues Paid
+                </span>
+                <span class="inp-k">
+                  : Rs 500
+                </span>
+              </div>
+              <div>
+                <span class="lab-l">
+                  Late Fee Paid
+                </span>
+                <span class="inp-l">
+                  : Rs 0
+                </span>
+              </div>
+              <div>
+                <span class="lab-m">
+                  Transaction ID
+                </span>
+                <span class="inp-m">
+                  : ADSF94823953
+                </span>
+              </div>
+              <div>
+                <span class="lab-n">
+                  Number of Transactions
+                </span>
+                <span class="inp-n">
+                  : 5
+                </span>
+              </div>
+              <div>
+                <span class="lab-o">
+                  View Reciept
+                </span>
+                :
+                <span class="inp-o">
+
+                </span>
+              </div>
+              <!-- <p>
+                    <label for="library">Library Dues Paid</label>
+                    <input id="library" type="number" placeholder="Library Dues Paid" name="library">
+                    </p> -->
+              <!-- button by defaul is type submit inside a form -->
+              <div class="form-control">
+                <span class="comment">
+                  <label for="comment">
+                    Add Remark
+                  </label>
+                </span>
+                <span class="remark">
+                  <!-- multi-line text input control -->
+                  :<textarea
+                    name="comment"
+                    id="comment"
+                    placeholder=" Enter your comment here"
+                  ></textarea>
+                </span>
+              </div>
+              <div class="buttons">
+                <span><button>Approve</button></span>
+                <span><button>Reject</button></span>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="grid-container1">
+        <p id="foot-left" class="grid-item1">@IIIT Guwahati 2023 </p>
+        <p id="foot-right" class="grid-item1">
+          IIIT Guwahati,Bongora, Guwahati -781015</p>
+      </footer>
+    </div>
+  </body>
+
+</html>

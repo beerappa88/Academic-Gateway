@@ -1,0 +1,93 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/tutionFee.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Oswald"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="https://www.iiitg.ac.in/header.svg" alt="img not found" />
+        <!-- <h2>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY</h2> -->
+        <nav>
+          <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="grid-container">
+        <!-- 
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div> -->
+        <div id="myleftSidenav" class="leftsidenav" class="grid-item">
+          <a href="/studentprofile/{{student.rollno}}" class="icon-a"><i
+              class="fa fa-dashboard icons"
+            ></i>
+            &nbsp;&nbsp;Profile</a>
+          <a href="/totalBill/{{student.rollno}}" class="icon-b"><i class="fa fa-users icons"></i>
+            &nbsp;&nbsp;Total Bill</a>
+          <a href="/tuitionFee/{{student.rollno}}" class="icon-c"><i class="fa fa-list icons"></i>
+            &nbsp;&nbsp;Tution fee</a>
+          <a href="/messFee/{{student.rollno}}" class="icon-d"><i
+              class="fa fa-shopping-bag icons"
+            ></i>
+            &nbsp;&nbsp;Mess fee</a>
+          <a href="/hostelRent/{{student.rollno}}" class="icon-e"><i class="fa fa-tasks icons"></i>
+            &nbsp;&nbsp;Hostel Rent</a>
+          <a href="/libraryDues/{{student.rollno}}" class="icon-f"><i class="fa fa-user icons"></i>
+            &nbsp;&nbsp;Library Dues</a>
+          <a href="/Studentupdatedetails/{{student.rollno}}" class="icon-g"><i
+              class="fa fa-list-alt icons"
+            ></i>
+            &nbsp;&nbsp;Upload Reciept</a>
+
+        </div>
+
+        <div class="grid-item" id="middle-text" class="flex-container">
+          <div class="flex-item1"><br /><h2>Total</h2><br /><br /><br />
+            <h2>Rs {{tuit.totalTuitionFee}}</h2></div>
+          <div class="flex-item2"><br /><h2>Paid</h2><br /><br /><br />
+            <h2>Rs {{tuit.tuitionPaid}}</h2></div>
+          <div class="flex-item3"><br /><h2>Due</h2><br /><br /><br />
+            <h2>Rs {{tuit.tuitionDues}}</h2></div>
+          <div class="flex-item4"><br /><h2>Late Fees</h2><br /><br /><br />
+            <h2>Rs 0</h2></div>
+        </div>
+        <div id="myrightSidenav" class="rightsidenav" class="grid-item">
+          <img
+            src="img1.jpeg"
+            alt="photo not available"
+            srcset=""
+            class="student_pic"
+            height="250"
+            width="250"
+          />
+          <p>Name - {{student.name}}</p>
+          <p>Roll No. - {{student.rollno}}</p>
+          <p>Email - {{student.email}}</p>
+
+        </div>
+      </div>
+
+      <footer class="grid-container1">
+        <p id="foot-left" class="grid-item1">@IIIT Guwahati 2023 </p>
+        <p id="foot-right" class="grid-item1">
+          IIIT Guwahati,Bongora, Guwahati -781015</p>
+      </footer>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,291 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/css/Studentupdatedetails.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="https://www.iiitg.ac.in/header.svg" alt="img not found" />
+        <!-- <h2>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY</h2> -->
+        <nav>
+          <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="grid-container">
+        <!-- 
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div> -->
+        <div id="myleftSidenav" class="leftsidenav" class="grid-item">
+          <a href="/studentprofile/{{student.rollno}}" class="icon-a">
+            <i class="fa fa-dashboard icons"></i>
+            &nbsp;&nbsp;Profile</a>
+          <a href="/totalBill/{{student.rollno}}" class="icon-b"><i class="fa fa-students icons"></i>
+            &nbsp;&nbsp;Total Bill</a>
+          <a href="/tuitionFee/{{student.rollno}}" class="icon-c"><i class="fa fa-list icons"></i>
+            &nbsp;&nbsp;Tution fee</a>
+          <a href="/messFee/{{student.rollno}}" class="icon-d"><i
+              class="fa fa-shopping-bag icons"
+            ></i>
+            &nbsp;&nbsp;Mess fee</a>
+          <a href="/hostelRent/{{student.rollno}}" class="icon-e"><i class="fa fa-tasks icons"></i>
+            &nbsp;&nbsp;Hostel Rent</a>
+          <a href="/libraryDues/{{student.rollno}}" class="icon-f"><i class="fa fa-student icons"></i>
+            &nbsp;&nbsp;Library Dues</a>
+          <a href="/Studentupdatedetails/{{student.rollno}}" class="icon-g"><i
+              class="fa fa-list-alt icons"
+            ></i>
+            &nbsp;&nbsp;Upload Reciept</a>
+
+        </div>
+
+        <div class="grid-item" id="mid" class="scrollbar" id="style-5">
+          <div id="a1">
+            <!-- <h2>Please Fill The Form</h2> -->
+          </div>
+          <!-- Create Form -->
+          <form
+            id="form"
+            class="middle"
+            class="force-overflow"
+            action="/Studentupdatedetails"
+            method="post"
+          >
+
+            <!-- Details -->
+            <div class="form-control">
+              <label for="name" id="label-name">
+                Name
+              </label>
+
+              <!-- Input Type Text -->
+              <input type="text" id="name" placeholder="Enter your name" name="name"/>
+            </div>
+
+            <div class="form-control">
+              <label for="rollNo" id="label-rollno">
+                Roll No
+              </label>
+
+              <!-- Input Type Text -->
+              <input
+                type="number"
+                id="rollNo"
+                placeholder="Enter your Roll No"
+                name="rollno"
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="phone" id="label-phone">
+                Phone No.
+              </label>
+
+              <!-- Input Type Text -->
+              <input
+                type="number"
+                id="rollNo"
+                placeholder="Enter your Phone No"
+                name="phone"
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="email" id="label-email">
+                Email
+              </label>
+
+              <!-- Input Type Email-->
+              <input type="email" id="email" placeholder="Enter your email" name="email"/>
+            </div>
+
+            <div class="form-control">
+              <label for="program" id="label-program">
+                Program
+              </label>
+
+              <!-- Dropdown options -->
+              <select name="role" id="role" name="program">
+                <option value="BTech">BTech</option>
+                <option value="MTech">MTech</option>
+                <option value="phd Scholar">
+                  phd Scholar
+                </option>
+              </select>
+            </div>
+            <div class="form-control">
+              <label for="Batch" id="label-Batch">
+                Batch
+              </label>
+
+              <!-- Dropdown options -->
+              <select name="role" id="role" name="batch">
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">
+                  2021
+                </option>
+
+              </select>
+            </div>
+
+            <div class="form-control">
+              <label for="tution fee" id="label-tution fee">
+                Tution Fee Paid
+              </label>
+
+              <!-- Input Type Text -->
+              <input
+                type="text"
+                id="tution fee"
+                placeholder="Enter the amount Paid"
+                name="tuition"
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="hostel dues" id="label-hostel dues">
+                Hostel Fee Paid
+              </label>
+
+              <!-- Input Type Text -->
+              <input
+                type="text"
+                id="hostel dues"
+                placeholder="Enter the amount Paid"
+                name="hostel"
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="Mess Dues" id="label-Mess Dues">
+                Mess Fee Paid
+              </label>
+
+              <!-- Input Type Text -->
+              <input
+                type="text"
+                id="Mess Dues"
+                placeholder="Enter the amount Paid"
+                name="mess"
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="Library Dues" id="label-Library Dues">
+                Library Dues
+              </label>
+
+              <!-- Input Type Text -->
+              <input
+                type="text"
+                id="Library Dues"
+                placeholder="Enter the amount Paid"
+                name="library"
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="trxId" id="label-trxId">
+                Transaction Id
+              </label>
+
+              <!-- Input Type Text -->
+              <input
+                type="text"
+                id="trxId"
+                placeholder="Enter the Transaction Id"
+                name="transactionId"
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="trx" id="label-trx">
+                No. Of Transactions
+              </label>
+
+              <!-- Input Type Text -->
+              <input
+                type="number"
+                id="trx"
+                placeholder="Enter the No. Of Transactions"
+                name="notrx"
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="Reciept" id="Reciept">
+                provide the link
+              </label>
+
+              <!-- Input Type Text -->
+              <input
+                type="text"
+                id="trx"
+                placeholder="provide the link of the file"
+                multiple="multiple"
+                name="data"
+              />
+            </div>
+
+            <div class="form-control">
+              <label for="comment">
+                Any comments or suggestions
+              </label>
+
+              <!-- multi-line text input control -->
+              <input
+                name="comment"
+                id="comment"
+                placeholder="Enter your comment here"
+                name="review"
+              >
+              </input>
+            </div>
+
+            <!-- Multi-line Text Input Control 
+                    <button type="submit" value="submit">
+                        Submit
+                    </button>
+                     HTML !-->
+            <button class="button" role="button">Submit</button>
+
+          </form>
+        </div>
+        <div id="myrightSidenav" class="rightsidenav" class="grid-item">
+          <img
+            src="img1.jpeg"
+            alt="photo not available"
+            srcset=""
+            class="student_pic"
+            height="250"
+            width="250"
+          />
+          <p>Name - {{student.name}}</p>
+          <p>Roll No. - {{student.rollno}}</p>
+          <p>Email - {{student.email}}</p>
+
+        </div>
+      </div>
+
+      <footer class="grid-container1">
+        <p id="foot-left" class="grid-item1">@IIIT Guwahati 2023 </p>
+        <p id="foot-right" class="grid-item1">
+          IIIT Guwahati,Bongora, Guwahati -781015</p>
+      </footer>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,262 @@
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Oswald"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="/css/addRemove.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <img src="https://www.iiitg.ac.in/header.svg" alt="img not found" />
+        <!-- <h2>INDIAN INSTITUTE OF INFORMATION TECHNOLOGY</h2> -->
+        <nav>
+          <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="grid-container">
+        <!-- 
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div> -->
+        <div id="myleftSidenav" class="leftsidenav" class="grid-item">
+          <a href="/adminhome" class="icon-a"><i
+              class="fa fa-dashboard icons"
+            ></i>
+            &nbsp;&nbsp;Search</a>
+
+          <a href="/verify" class="icon-b"><i class="fa fa-users icons"></i>
+            &nbsp;&nbsp;Verify Reciept</a>
+          <a href="/addRemove" class="icon-c"><i class="fa fa-list icons"></i>
+            &nbsp;&nbsp;Add/Remove</a>
+          <a href="/updateEntry" class="icon-d"><i
+              class="fa fa-shopping-bag icons"
+            ></i>
+            &nbsp;&nbsp;Update</a>
+          <a href="/analytics" class="icon-e"><i class="fa fa-tasks icons"></i>
+            &nbsp;&nbsp;Analytics</a>
+
+        </div>
+
+        <div class="grid-item" id="middle-text" class="flex-container">
+          <div class="add-stu">
+            <form action="/addRemove" method="post">
+              <div>
+                <span class="lab-a">
+                  <label for="Name">Name</label>
+                </span>
+                <span class="inp-a">
+                  :
+                  <!-- <input id="Name" type="text" placeholder="Name" name="Name"> -->
+                  <input
+                    id="Name"
+                    class="input"
+                    type="text"
+                    placeholder="Name"
+                    name="name"
+                  />
+                </span>
+              </div>
+              <div>
+                <span class="lab-b">
+                  <label for="roll-number">Roll Number</label>
+                </span>
+                <span class="inp-b">
+                  :
+                  <input
+                    class="input"
+                    id="roll-number"
+                    type="text"
+                    placeholder="Roll number"
+                    name="rollno"
+                  />
+                </span>
+              </div>
+              {{!-- <div>
+                <span class="lab-z">
+                  <label for="password">Password</label>
+                </span>
+                <span class="inp-z">
+                  :
+                  <input
+                    class="input"
+                    id="password"
+                    type="text"
+                    placeholder="password"
+                    name="password"
+                  />
+                </span>
+              </div> --}}
+              <div>
+                <span class="lab-c">
+                  <label for="Batch">Batch</label>
+                </span>
+                <span class="inp-c">
+                  :
+                  <input
+                    class="input"
+                    id="Batch"
+                    type="text"
+                    placeholder="Batch"
+                    name="batch"
+                  />
+                </span>
+              </div>
+              <div>
+                <span class="lab-d">
+                  <label for="Branch">Branch</label>
+                </span>
+                <span class="inp-d">
+                  :
+                  <input
+                    class="input"
+                    id="Branch"
+                    type="text"
+                    placeholder="Branch"
+                    name="branch"
+                  />
+                </span>
+              </div>
+              <div>
+                <span class="lab-e">
+                  <label for="Programme">Programme</label>
+                </span>
+                <span class="inp-e">
+                  :
+                  <input
+                    class="input"
+                    id="Programme"
+                    type="text"
+                    placeholder="Programme"
+                    name="programme"
+                  />
+                </span>
+              </div>
+              <div>
+                <span class="lab-f">
+                  <label for="Email">Email</label>
+                </span>
+                <span class="inp-f">
+                  :
+                  <input
+                    class="input"
+                    id="Email"
+                    type="text"
+                    placeholder="Email"
+                    name="email"
+                  />
+                </span>
+              </div>
+              <div>
+                <span class="lab-g">
+                  <label for="Phone">Phone</label>
+                </span>
+                <span class="inp-g">
+                  :
+                  <input
+                    class="input"
+                    id="Phone"
+                    type="text"
+                    placeholder="Phone"
+                    name="phone"
+                  />
+                </span>
+              </div>
+              <div>
+                <span class="lab-h">
+                  <label for="tution">Tution Fee Paid</label>
+                </span>
+                <span class="inp-h">
+                  :
+                  <input
+                    class="input"
+                    id="tution"
+                    type="text"
+                    placeholder="Tution Fee Paid"
+                    name="tuitionPaid"
+                  />
+                </span>
+              </div>
+              <div>
+                <span class="lab-i">
+                  <label for="hostel">Hostel Fee paid</label>
+                </span>
+                <span class="inp-i">
+                  :
+                  <input
+                    class="input"
+                    id="hostel"
+                    type="text"
+                    placeholder="Hostel Fee paid"
+                    name="hostelPaid"
+                  />
+                </span>
+              </div>
+              <div>
+                <span class="lab-j">
+                  <label for="mess">Mess Fee Paid</label>
+                </span>
+                <span class="inp-j">
+                  :
+                  <input
+                    class="input"
+                    id="mess"
+                    type="text"
+                    placeholder="Mess Fee Paid"
+                    name="messPaid"
+                  />
+                </span>
+              </div>
+              <div>
+                <span class="lab-k">
+                  <label for="library">library Dues Paid</label>
+                </span>
+                <span class="inp-k">
+                  :
+                  <input
+                    class="input"
+                    id="library"
+                    type="text"
+                    placeholder="library Dues Paid"
+                    name="libraryDues"
+                  />
+                </span>
+              </div>
+              <!-- <p>
+                    <label for="library">Library Dues Paid</label>
+                    <input id="library" type="number" placeholder="Library Dues Paid" name="library">
+                    </p> -->
+              <!-- button by defaul is type submit inside a form -->
+              <button>Add Entry</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+      <footer class="grid-container1">
+        <p id="foot-left" class="grid-item1">@IIIT Guwahati 2023 </p>
+        <p id="foot-right" class="grid-item1">
+          IIIT Guwahati,Bongora, Guwahati -781015</p>
+      </footer>
+    </div>
+  </body>
+
+</html>
